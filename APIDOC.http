@@ -1,0 +1,66 @@
+#api call for listing all leads
+
+###
+GET http://127.0.0.1:8000/api/leads/
+
+
+# api call for adding a new lead
+###
+POST http://127.0.0.1:8000/api/leads/
+Content-Type: application/json
+
+
+{
+  "first_name": "vipin",
+  "last_name": "das",
+  "email": "vipin@gmaill.com",
+  "phone": "8989789968",
+  "dob": "14/05/1997",
+  "gender": "male",
+  "qualification": "mca",
+  "course": "django",
+  "passout_year": "2024",
+  "course_mode": "offline",
+  "source": "website",
+  "status": "new",
+  "priority": "medium",
+  "note": null,
+  "follow_up_date": "14/01/2025",
+  "created_at": "2025-02-26T04:55:57.555533Z"
+}
+
+
+#API call for fetching specific lead
+###
+GET http://127.0.0.1:8000/api/leads/2/
+
+
+#APi call for deleting lead
+###
+DELETE http://127.0.0.1:8000/api/leads/2/
+
+#APi call for updating lead
+###
+PUT http://127.0.0.1:8000/api/leads/2/
+Content-Type: application/json
+
+
+{
+ 
+  "first_name": "vipin thomas",
+  "last_name": "das",
+  "email": "vipin@gmaill.com",
+  "phone": "8989789968",
+  "dob": "14/05/1997",
+  "gender": "male",
+  "qualification": "mca",
+  "course": "testing",
+  "passout_year": "2024",
+  "course_mode": "offline",
+  "source": "website",
+  "status": "new",
+  "priority": "medium",
+  "note": null,
+  "follow_up_date": "14/01/2025",
+  "created_at": "2025-02-26T05:00:29.586886Z"
+}
